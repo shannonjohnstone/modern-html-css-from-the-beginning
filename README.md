@@ -1,2 +1,2 @@
-# modern-html-css-from-the-beginning
-Sandbox for html and css refresher
+# Modern HTML and CSS
+HTML and CSS refresher project.
