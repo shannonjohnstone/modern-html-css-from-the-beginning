@@ -5,28 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta type="keywords" content="hotel accommodation tourism travel">
   <meta type="author" content="Shannon Johnstone">
+  <meta type="keywords" content="hotel accommodation tourism travel">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Hotel - About</title>
+
+  <title>Hotel BT | About</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">About</a>
-      <a href="contact.html">Contact</a>
+    <nav class="nav-main bg--dark ">
+      <div class="container">
+        <h2 class="nav-main__logo"><a href="index.html">HBT</a></h2>
+        <ul>
+          <li class="nav-main__item"><a href="index.html">Home</a></li>
+          <li class="nav-main__item"><a class="active" href="#">About</a></li>
+          <li class="nav-main__item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
+  <!-- Main Content -->
   <main>
-    <h1>This is about</h1>
-    <section>
-      <p>This is the main section</p>
+    <!-- About Info -->
+    <section class="about-info py-3">
+      <div class="container">
+        <div class="about-info__left">
+          <h1 class="text__heading--large">
+            <span class="text--primary">About</span> Hotel BT
+          </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt sapiente molestias repellendus!
+            Repellat temporibus reprehenderit ex dolorem quam? Eaque nobis, molestias unde doloribus maxime natus
+            nostrum quaerat rerum quis.</p>
+        </div>
+        <div class="about-info__right">
+          <img src="./img/photo-2.jpg" alt="hotel">
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials py-3">
+      <div class="container">
+        <h2 class="text__heading--large text--primary">What Our Guest Say</h2>
+        <div class="testimonials__panel bg--light">
+          <img src="./img/person-1.jpg" alt="person one">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos quia rerum unde porro esse ut libero
+            possimus saepe. Voluptatibus facere libero a suscipit laboriosam odit in quas eveniet harum.</p>
+        </div>
+        <div class="testimonials__panel bg--light">
+          <img src="./img/person-2.jpg" alt="person two">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos quia rerum unde porro esse ut libero
+            possimus saepe. Voluptatibus facere libero a suscipit laboriosam odit in quas eveniet harum.</p>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>This is the footer</p>
+  <footer class="footer-main clear bg--dark">
+    <div class="container">
+      <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+    </div>
   </footer>
 </body>
 
