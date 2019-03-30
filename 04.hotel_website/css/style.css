@@ -25,6 +25,7 @@ html, body {
 
 .text__heading--large {
   font-size: 40px;
+  line-height: 1.2;
 }
 
 .text--primary {
@@ -70,7 +71,7 @@ html, body {
 }
 
 .btn--dark:hover {
-  background: #214a38;
+  background: #303c37;
 }
 
 .btn--dark {
@@ -79,7 +80,7 @@ html, body {
 }
 
 .btn--dark:hover {
-  background: #214a38;
+  background: #303c37;
 }
 
 /* Nav */
@@ -115,7 +116,7 @@ html, body {
 
 .nav-main__item .active, .nav-main__item a:hover {
   color: #f7c08a;
-  background: #214a38;
+  background: #303c37;
 }
 
 /* Home showcase */
@@ -242,6 +243,7 @@ html, body {
 
 /* Footer */
 footer {
+  border-top: 1px dotted #444;
   text-align: center;
   font-size: .8rem;
   padding: 30px 0;
