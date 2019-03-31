@@ -139,6 +139,7 @@ p {
   justify-content: space-between;
   z-index: 1;
   padding: 1rem;
+  transition: opacity 1s;
 }
 
 .navbar ul {

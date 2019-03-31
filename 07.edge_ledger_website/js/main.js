@@ -1,3 +1,6 @@
+// utils
+const setOpacity = (item) => (opacity) => document.querySelector(item).style.opacity = opacity;
+
 // init map
 let map;
 
@@ -7,6 +10,16 @@ function initMap() {
     zoom: 8
   });
 }
+
+// navbar opacity control
+function controlNavBarEventCallback () {
+  const setNavbarOpacity = setOpacity('.navbar');
+  const opacityValue = window.scrollY > 150 ? 0.9 : 1;
+
+  setNavbarOpacity(opacityValue);
+}
+
+window.addEventListener('scroll', controlNavBarEventCallback);
 
 // basic smooth scrolling, using jquery for demo purpose only
 $('.navbar a, .btn').on('click', function (e) {
