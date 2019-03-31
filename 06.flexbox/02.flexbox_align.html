@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex align</title>
+
+  <style>
+    .container {
+      display: flex;
+      background: #555;
+      justify-content: space-evenly;
+      height: 600px;
+      align-items: flex-start;
+    }
+
+    .item {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      text-align: center;
+      padding: 1rem;
+      margin: .5rem;
+      flex-basis: 200px;
+    }
+
+    .item-1 {
+      align-self: flex-start;
+      order: 1;
+    }
+
+    .item-2 {
+      align-self: center;
+      order: 2;
+    }
+
+    .item-3 {
+      align-self: flex-end;
+      order: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item-1">
+      <h3>Item 1</h3>
+    </div>
+    <div class="item item-2">
+      <h3>Item 2</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+  </div>
+</body>
+
+</html>
