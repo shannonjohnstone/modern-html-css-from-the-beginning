@@ -65,15 +65,31 @@ p {
   background-color: #93cb52;
   padding: .5rem 2rem;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .2s;
+  border: none;
+}
+
+.btn-dark {
+  background-color: #333;
 }
 
 .btn:hover {
   background-color: #7ab436;
-  transition: background-color .2s;
+}
+
+.btn-dark:hover {
+  background-color: #4a4a4a;
+}
+
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
 }
 
 .bg-dark {
   background-color: #333;
+  color: #fff;
 }
 
 .list {
@@ -84,6 +100,31 @@ p {
 .list li {
   padding: .5rem 0;
   border-bottom: 1px dotted #444;
+}
+
+.flex {
+  display: flex
+}
+
+.flex-1 {
+  flex: 1
+}
+
+/* Form styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input, .form-group textarea {
+  border: none;
+  flex: 1;
+  padding: .7rem
 }
 
 /* Component styling */
@@ -188,3 +229,6 @@ p {
   margin: auto;
   width: 60%;
 }
+
+/* section: contact */
+
