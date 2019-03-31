@@ -1,0 +1,62 @@
+.what .items {
+  display: block;
+  padding: 1rem;
+}
+
+.what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+.what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+@media(max-width: 500px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .mobile-flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .logo {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .showcase-content {
+    top: 103px;
+  }
+
+  .who-img {
+    display: none;
+  }
+
+  .clients .items img {
+    width: 60%;
+  }
+
+  .contact-map {
+    height: 200px;
+  }
+}
+
+@media(max-height: 560px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
