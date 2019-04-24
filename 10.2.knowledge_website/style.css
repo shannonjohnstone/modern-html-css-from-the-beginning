@@ -49,14 +49,18 @@ body {
   padding: 1rem;
   background: var(--secondary-color);
   transition: all .5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #timeline ul li:nth-child(odd) div {
   left: 40px;
+  transform: translate(200px, 0);
 }
 
 #timeline ul li:nth-child(even) div {
   left: -434px;
+  transform: translate(-200px, 0);
 }
 
 #timeline ul li:after {
@@ -66,7 +70,7 @@ body {
   bottom: 0;
   width: 25px;
   height: 25px;
-  background: var(--secondary-color);
+  background: inherit;
   transform: translateX(-50%);
   border-radius: 50%;
 }
@@ -90,4 +94,14 @@ body {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent var(--secondary-color);
+}
+
+#timeline ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#timeline ul li.show:after {
+  background: var(--secondary-color);
 }
