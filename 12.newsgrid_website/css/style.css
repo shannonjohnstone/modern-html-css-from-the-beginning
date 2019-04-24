@@ -124,6 +124,9 @@ h1, h2, h3, h4, h5, h6 {
 .p-2 { padding: 2rem; }
 .p-3 { padding: 3rem; }
 
+.l-heading {
+  font-size: 3rem;
+}
 
 .list li {
   padding: .5rem 0;
@@ -292,11 +295,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* About page */
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: .5rem;
+}
 
-
-
-
-
+#article .meta .category {
+  margin-top: .4rem;
+}
 
 
 
