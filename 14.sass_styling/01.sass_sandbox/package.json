@@ -1,5 +1,5 @@
 {
-  "name": "sass_sandbox",
+  "name": "01.sass_sandbox",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,5 +7,8 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
