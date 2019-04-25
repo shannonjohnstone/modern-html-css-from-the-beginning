@@ -10,7 +10,7 @@
 body {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
-  color: #fff;
+  color: #000;
 }
 
 a {
@@ -34,7 +34,6 @@ img {
 #logo {
   width: 70px;
   height: 70px;
-  color: #fff;
   text-transform: uppercase;
 }
 
@@ -73,6 +72,7 @@ img {
 // Header
 #header {
   &-home {
+    color: #fff;
     background: $bg-image no-repeat center right/cover;
     height: 100vh;
 
@@ -89,3 +89,54 @@ img {
 
   &-inner {}
 }
+
+
+// Home Sections
+#home {
+  &-a {
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fas {
+      color: $main-color;
+      padding-bottom: .4rem;
+    }
+  }
+
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        line-height: 2;
+
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(odd) {
+          background: $light-color;
+        }
+
+        &:nth-child(even) {
+          background: $medium-color;
+        }
+      }
+    }
+  }
+}
+
