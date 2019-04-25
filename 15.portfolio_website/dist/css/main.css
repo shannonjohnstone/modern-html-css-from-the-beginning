@@ -79,7 +79,7 @@ input[class^='btn-']:hover {
   padding: 0; }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.6;
   color: #000; }
 
@@ -189,12 +189,14 @@ img {
     right: 0;
     font-size: 28px;
     background: #ffbc00;
+    color: #fff;
     border-radius: 50%;
     height: 15px;
     width: 15px;
     line-height: 15px;
     padding: 1rem;
-    transition: all 1s; }
+    transition: all 1s;
+    font-family: "Dosis", sans-serif; }
 
 #main-footer {
   background: #333;
